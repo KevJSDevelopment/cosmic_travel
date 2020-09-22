@@ -6,3 +6,7 @@
         <li> <%= planet.name %> </li>
     <%end%>
 </ul>
+
+<%= link_to "Edit #{@scientist.name}", edit_scientist_path(@scientist.id) %>
+<%= link_to "Delete #{@scientist.name}", scientist_path(@scientist.id),
+    method: "delete"%>
